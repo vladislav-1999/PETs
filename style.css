@@ -67,6 +67,10 @@ a {
     margin-bottom: 20px;
 }
 
+.home-info__about {
+    margin-right: 10px;
+}
+
 
 
 /* Header Block */
@@ -202,3 +206,260 @@ a {
 }
 
 /* Footer Block end */
+
+/* Адаптив */
+
+@media screen and (max-width: 1650px) {
+  /* Уменьшаем максимальную ширину контента */
+  .wrapper {
+    max-width: 95%;
+  }
+
+}
+
+@media screen and (max-width: 1300px) {
+    .title {
+        font-size: 75px;
+    }
+
+    .home-info__about-img {
+    width: 550px;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+}
+
+/* Планшеты (от 768px до 1200px) */
+@media screen and (max-width: 1200px) {
+
+  /* Шапка */
+  .header-wrapper {
+    /* Можем немного уменьшить отступы */
+    padding: 0 20px;
+  }
+
+  .header-logo__img {
+    /* Сделаем позиционирование более гибким
+    position: static; /* Или оставим absolute, но с относительными единицами */
+    /* left: 20px;
+    width: 60px;
+    height: 60px;
+  }  */
+
+  .header-nav__item {
+    margin-right: 30px; /* Уменьшаем расстояние между пунктами */
+    font-size: 16px; /* Уменьшаем шрифт */
+  }
+
+  /* Основной контент */
+  .home-info {
+    height: auto; /* Позволяем высоте подстраиваться */
+    padding-bottom: 50px; /* Добавим отступ снизу */
+  }
+
+  .home-info__flex {
+    flex-direction: column; /* Элементы друг под другом */
+    align-items: center;
+    padding-top: 100px; /* Уменьшаем отступ сверху */
+    text-align: center; /* Центрируем текст */
+  }
+
+  .home-info__about {
+    margin-bottom: 30px; /* Отступ между текстом и картинкой */
+  }
+
+  .home-info__about-img {
+    width: 90%; /* Ширина картинки 90% от контейнера */
+    max-width: 600px; /* Ограничим максимальную ширину */
+  }
+
+  .title {
+    font-size: 72px; /* Уменьшаем заголовок */
+  }
+
+  .description {
+    font-size: 18px; /* Уменьшаем описание */
+    line-height: 28px;
+  }
+
+  /* Подвал */
+  .footer__wrapper {
+    flex-direction: column; /* Располагаем элементы вертикально */
+    justify-content: center;
+    gap: 15px; /* Расстояние между блоками */
+    padding: 20px 0;
+  }
+
+  .footer-contacts {
+    flex-direction: row; /* Контакты в одну линию */
+    gap: 20px; /* Расстояние между контактами */
+  }
+}
+
+@media screen and (max-width: 1050px) {
+    .title {
+        font-size: 65px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .home-info__about-text {
+    margin-bottom: 15px;
+    }
+
+    .home-info__flex {
+        padding-top: 90px;
+    }
+    .home-info {
+        height: 515px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .home-info__about-img {
+        width: 480px;
+    }
+    .logo {
+        display: none;
+    }
+    .footer__wrapper {
+    justify-content: space-around;
+    }
+    .footer-contacts {
+    align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .title {
+        font-size: 60px;
+    }
+    .description {
+        font-size: 13px;
+    }
+}
+
+/* Мобильные устройства (до 768px) */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 90%;
+  }
+
+  /* Шапка */
+  .header {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .header-wrapper {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  .header-logo__img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .header-nav__list {
+    flex-wrap: wrap; /* Позволяем пунктам переноситься на новую строку */
+    justify-content: center;
+    gap: 10px 20px; /* Отступы между пунктами */
+  }
+
+  .header-nav__item {
+    margin-right: 0; /* Убираем правый отступ */
+    font-size: 14px;
+  }
+
+  /* Основной контент */
+  .home-info {
+    padding-bottom: 30px;
+  }
+
+  .home-info__flex {
+    padding-top: 60px;
+  }
+
+  .home-info__about-img {
+    border-radius: 10px;
+    width: 300px;
+  }
+
+  .title {
+    font-size: 48px; /* Еще сильнее уменьшаем заголовок */
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* Подвал */
+  .footer {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .footer__wrapper {
+    gap: 10px;
+  }
+
+  .footer-contacts {
+    flex-direction: column; /* Контакты друг под другом */
+    gap: 5px;
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+        .home-info__about-img {
+            width: 200px;
+        }
+}
+
+/* Очень маленькие экраны (до 480px) */
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .header-nav__item a {
+    /* Может потребоваться уменьшить размер шрифта ссылок в выпадающих списках */
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+    .home-info__flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-info__about {
+        margin: 0 40px;
+    }
+
+    .home-info__about-title {
+        align-items: center;
+    }
+
+    .home-info__tasks {
+        margin-bottom: 20px;
+    }
+}}
