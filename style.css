@@ -29,10 +29,11 @@ a {
 
 .logo {
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 45px;
+    height: 45px;
     border: 1px solid #ADB3BF;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    display: none;
 }
 
 .hidden {
@@ -40,9 +41,8 @@ a {
 }
 
 .home-info {
-    background-color: #131517;
-    background: #000;
-    background-image: url(img/rectangle.png);
+    background: url(img/android2.jpeg) no-repeat center center;
+    background-size: cover;
     height: 1000px;
 }
 
@@ -71,6 +71,16 @@ a {
     margin-right: 10px;
 }
 
+.header-nav__stack-item-img {
+    transition: all 0.3s ease;
+}
+
+.header-nav__stack-item:hover .header-nav__stack-item-img {
+    transform: scale(1.2);
+}
+
+ 
+
 
 
 /* Header Block */
@@ -85,7 +95,7 @@ a {
     color: #ADB3BF;
 
     background-color: #1E1F25;
-    height: 120px;
+    height: 65px;
     position: relative;
 }
 
@@ -109,9 +119,9 @@ a {
 .header-nav__item {
     list-style-type: none;
     transition: all 0.3s ease;
-    margin-right: 70px;
+    margin-right: 140px;
     cursor: pointer;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 10px #ffffff80;
 }
 
 .header-nav__item:hover {
@@ -149,6 +159,13 @@ a {
     position: absolute;
 }
 
+.header-nav__burger {
+    background-color: #1E1F25;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px; 
+}
+
 .header-nav__real-projects-list  {
     position: absolute;
 }
@@ -163,7 +180,7 @@ a {
 
 .footer {
     background-color: #1E1F25;
-    height: 120px;
+    height: 65px;
     background-image: url(img/rectangle.png);
 }
 
@@ -197,6 +214,8 @@ a {
 .footer-contacts__item {
     transition: all 0.3s ease;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    line-height: 23px;
 }
 
 .footer-contacts__item:hover {
@@ -356,20 +375,18 @@ a {
   }
 
   .header-wrapper {
-    flex-direction: column;
-    gap: 15px;
-    padding: 10px 0;
+    display: block;
+  }
+
+  .header-nav__list {
+    display: flex;
+    justify-content: center;
+    gap: 65px
   }
 
   .header-logo__img {
     width: 50px;
     height: 50px;
-  }
-
-  .header-nav__list {
-    flex-wrap: wrap; /* Позволяем пунктам переноситься на новую строку */
-    justify-content: center;
-    gap: 10px 20px; /* Отступы между пунктами */
   }
 
   .header-nav__item {
@@ -378,17 +395,16 @@ a {
   }
 
   /* Основной контент */
+ .home-info__about {
+    max-width: 325px;
+}
+
   .home-info {
     padding-bottom: 30px;
   }
 
   .home-info__flex {
     padding-top: 60px;
-  }
-
-  .home-info__about-img {
-    border-radius: 10px;
-    width: 300px;
   }
 
   .title {
@@ -398,6 +414,10 @@ a {
   .description {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .home-info__about-item li {
+    margin-bottom: 8px;
   }
 
   /* Подвал */
@@ -421,10 +441,26 @@ a {
   }
 }
 
-@media screen and (max-width: 768px) {
-        .home-info__about-img {
-            width: 200px;
-        }
+@media screen and (max-width: 730px) {
+    .home-info {
+        background: url(img/android2.jpeg) no-repeat -170px center;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .home-info {
+        background: url(img/android2.jpeg) no-repeat -280px center;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .home-info {
+        background: url(img/android2.jpeg) no-repeat -320px center;
+    }
+
+      .header-nav__list {
+    gap: 45px
+  }
 }
 
 /* Очень маленькие экраны (до 480px) */
@@ -448,18 +484,51 @@ a {
     .home-info__flex {
         display: flex;
         flex-direction: column;
-        align-items: center;
-    }
-
-    .home-info__about {
-        margin: 0 40px;
     }
 
     .home-info__about-title {
-        align-items: center;
+        text-align: left;
     }
 
     .home-info__tasks {
         margin-bottom: 20px;
     }
-}}
+
+    .home-info__about {
+        max-width: 257px;
+    }
+    .home-info {
+        background: url(img/android2.jpeg) no-repeat -360px center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .home-info__flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-info__about-title {
+        text-align: left;
+    }
+
+    .home-info__tasks {
+        margin-bottom: 20px;
+    }
+
+    .home-info__about {
+        max-width: 230px;
+    }
+    .home-info {
+        background: url(img/android2.jpeg) no-repeat -390px center;
+    }
+      .header-nav__list {
+    gap: 40px
+  }
+}
+
+@media screen and (max-width: 400px) {
+    .home-info {
+      background: url(img/android2.jpeg) no-repeat -430px center;
+    }
+}
