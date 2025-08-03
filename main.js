@@ -1,4 +1,6 @@
-'use strict'
+"use strict";
+
+const preloader = document.querySelector(".preloader");
 
 const header = document.querySelector(".header");
 const headerNav__projects = document.querySelector(".header-nav__projects");
@@ -14,7 +16,13 @@ const headerNav__realProjectsList = document.querySelector(
   ".header-nav__real-projects-list"
 );
 
-const preloader = document.querySelector(".preloader");
+const home_info__about_title = document.querySelector(
+  ".home-info__about-title"
+);
+
+const home_info__about_text = document.querySelector(".home-info__about-text");
+
+const home_info__tasks = document.querySelector(".home-info__tasks-block");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
@@ -49,8 +57,16 @@ headerNav__realProjects.addEventListener("mouseout", () => {
 });
 
 window.addEventListener("load", () => {
-  setTimeout(() => preloader.classList.add("zIndex0"), 500);
+  setTimeout(() => {
+    preloader.classList.add("zIndex0");
+    home_info__about_title.classList.add("home-info__about-title--active");
+    setTimeout(() => {
+      home_info__about_text.classList.add("home-info__about-text--active");
+      setTimeout(() => {
+        home_info__tasks.classList.add("home-info__tasks-block--active");
+      }, 200);
+    }, 200);
+  }, 500);
+
   //   preloader.classList.add("zIndex0");
 });
-
-
