@@ -23,118 +23,243 @@
       <div class="spinner"></div>
     </div>
 
-    <header class="header">
-      <div class="header-wrapper wrapper">
-        <img src="img/logo_cat.jpg" alt="" class="logo header-logo__img" />
-        <nav class="header-nav">
-          <ul class="header-nav__list">
-            <li class="header-nav__item header-nav__real-projects">
-              <a href="#">
-                Проекты
-                <ul
-                  class="header-nav__real-projects-list hidden header-nav__burger"
-                >
-                  <li class="header-nav__real-projects-item">
-                    <a href="#" target="_blank"
-                      >Скоро тут будут проекты, в которых я участвую.</a
-                    >
-                  </li>
-                </ul>
-              </a>
-            </li>
-            <li class="header-nav__item header-nav__projects">
-              <a href="#">
-                PET
-                <ul class="header-nav__projects-list hidden header-nav__burger">
-                  <li class="header-nav__projects-item">
-                    <a href="cats/index.html" target="_blank">Котята</a>
-                  </li>
-                  <li class="header-nav__projects-item">
-                    <a href="detox/home.html" target="_blank"
-                      >Лендинг "Смузи"</a
-                    >
-                  </li>
-                </ul>
-              </a>
-            </li>
-            <li class="header-nav__item header-nav__stack">
-              <a href="#">
-                Стек
-                <ul class="header-nav__stack-list hidden header-nav__burger">
-                  <li class="header-nav__stack-item">
-                    <a
-                      href="https://ru.wikipedia.org/wiki/HTML"
-                      target="_blank"
-                    >
-                      <img
-                        class="header-nav__stack-item-img"
-                        src="img/htmlicon.svg"
-                        alt=""
-                      />
-                      <span>HTML</span>
-                    </a>
-                  </li>
-                  <li class="header-nav__stack-item">
-                    <a href="https://ru.wikipedia.org/wiki/CSS" target="_blank">
-                      <img
-                        class="header-nav__stack-item-img"
-                        src="img/cssicon.svg"
-                        alt=""
-                      />
-                      <span>CSS</span>
-                    </a>
-                  </li>
-                  <li class="header-nav__stack-item">
-                    <a href="https://react.dev/" target="_blank">
-                      <img
-                        class="header-nav__stack-item-img"
-                        src="img/reacticon.svg"
-                        alt=""
-                      />
-                      <span>React</span>
-                    </a>
-                  </li>
-                  <li class="header-nav__stack-item">
-                    <a href="https://github.com/vladislav-1999" target="_blank">
-                      <img
-                        class="header-nav__stack-item-img"
-                        src="img/gicicon.svg"
-                        alt=""
-                      />
-                      <span>Git</span>
-                    </a>
-                  </li>
-                </ul>
-              </a>
-            </li>
-            <li class="header-nav__item">
-              <a href="https://github.com/vladislav-1999" target="_blank"
-                >GitHub</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <section class="home-info">
-      <div class="home-info__flex wrapper">
-        <div class="home-info__about">
-          <h1 class="title home-info__about-title">Web Apps</h1>
-          <p class="description home-info__about-text">
-            Разработка web-приложений.
-          </p>
-          <div class="home-info__tasks-block">
-            <span class="description">Цели:</span>
-            <ul class="description home-info__tasks home-info__about-item">
-              <li>1. Выучить React и перенести этот сайт и PET на React.</li>
-              <li>
-                2. Выбрать препроцессор и переписать CSS с его использованием.
+    <section class="hero">
+      <header class="header">
+        <div class="header-wrapper wrapper">
+          <img src="img/logo_cat.jpg" alt="" class="logo header-logo__img" />
+          <nav class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item header-nav__real-projects">
+                <a href="#">
+                  Проекты
+                  <ul
+                    class="header-nav__real-projects-list hidden header-nav__burger"
+                  >
+                    <li class="header-nav__real-projects-item">
+                      <a href="#" target="_blank"
+                        >Скоро тут будут проекты, в которых я участвую.</a
+                      >
+                    </li>
+                  </ul>
+                </a>
               </li>
-              <li>3. Сделать адаптивные версии сайта и PET.</li>
-              <li>4. Реализовать "хлебные крошки".</li>
-              <!-- &#10004; -->
+              <li class="header-nav__item header-nav__projects">
+                <a href="#">
+                  PET
+                  <ul
+                    class="header-nav__projects-list hidden header-nav__burger"
+                  >
+                    <li class="header-nav__projects-item">
+                      <a href="cats/index.html" target="_blank">Котята</a>
+                    </li>
+                    <li class="header-nav__projects-item">
+                      <a href="detox/home.html" target="_blank"
+                        >Лендинг "Смузи"</a
+                      >
+                    </li>
+                  </ul>
+                </a>
+              </li>
+              <li class="header-nav__item header-nav__stack">
+                <a href="#">
+                  Стек
+                  <ul class="header-nav__stack-list hidden header-nav__burger">
+                    <li class="header-nav__stack-item">
+                      <a
+                        href="https://ru.wikipedia.org/wiki/HTML"
+                        target="_blank"
+                      >
+                        <img
+                          class="header-nav__stack-item-img"
+                          src="img/htmlicon.svg"
+                          alt=""
+                        />
+                        <span>HTML</span>
+                      </a>
+                    </li>
+                    <li class="header-nav__stack-item">
+                      <a
+                        href="https://ru.wikipedia.org/wiki/CSS"
+                        target="_blank"
+                      >
+                        <img
+                          class="header-nav__stack-item-img"
+                          src="img/cssicon.svg"
+                          alt=""
+                        />
+                        <span>CSS</span>
+                      </a>
+                    </li>
+                    <li class="header-nav__stack-item">
+                      <a href="https://react.dev/" target="_blank">
+                        <img
+                          class="header-nav__stack-item-img"
+                          src="img/reacticon.svg"
+                          alt=""
+                        />
+                        <span>React</span>
+                      </a>
+                    </li>
+                    <li class="header-nav__stack-item">
+                      <a
+                        href="https://github.com/vladislav-1999"
+                        target="_blank"
+                      >
+                        <img
+                          class="header-nav__stack-item-img"
+                          src="img/gicicon.svg"
+                          alt=""
+                        />
+                        <span>Git</span>
+                      </a>
+                    </li>
+                  </ul>
+                </a>
+              </li>
+              <li class="header-nav__item">
+                <a href="https://github.com/vladislav-1999" target="_blank"
+                  >GitHub</a
+                >
+              </li>
             </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section class="home-info">
+        <div class="home-info__flex wrapper">
+          <div class="home-info__about">
+            <h1 class="title home-info__about-title">Web Apps</h1>
+            <p class="description home-info__about-text">
+              Разработка web-приложений.
+            </p>
+            <div class="home-info__tasks-block">
+              <span class="description">Цели:</span>
+              <ul class="description home-info__tasks home-info__about-item">
+                <li>1. Выучить React и перенести этот сайт и PET на React.</li>
+                <li>
+                  2. Выбрать препроцессор и переписать CSS с его использованием.
+                </li>
+                <li>3. Сделать адаптивные версии сайта и PET.</li>
+                <li>4. Реализовать "хлебные крошки".</li>
+                <!-- &#10004; -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="stack-block">
+      <div class="wrapper">
+        <div class="stack-block__list">
+          <div class="stack-block__item stack-block__item-html">
+            <div class="stack-block__item-person">
+              <img
+                src="img/TimHTML.png"
+                alt=""
+                class="stack-block__item-person-img"
+              />
+              <blockquote class="description">
+                «Создавая технологии, мы формируем общество. Делайте это
+                ответственно»
+              </blockquote>
+            </div>
+            <div class="stack-block__item-stack">
+              <h1 class="title stack-block__item-title">HTML</h1>
+              <ul class="stack-block__item-stack-list">
+                <li class="description stack-block__item-description">
+                  Скилл 1
+                </li>
+                <li class="description stack-block__item-description">
+                  Скилл 2
+                </li>
+                <li class="description stack-block__item-description">
+                  Скилл 3
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="stack-block__item stack-block__item-css">
+            <div class="stack-block__item-person">
+              <img
+                src="img/TimHTML.png"
+                alt=""
+                class="stack-block__item-person-img"
+              />
+              <blockquote class="description">
+                «Создавая технологии, мы формируем общество. Делайте это
+                ответственно»
+              </blockquote>
+            </div>
+            <div class="stack-block__item-stack">
+              <h1 class="title stack-block__item-title">CSS</h1>
+              <ul class="stack-block__item-stack-list">
+                <li class="description stack-block__item-description">
+                  Скилл 1
+                </li>
+                <li class="description stack-block__item-description">
+                  Скилл 2
+                </li>
+                <li class="description stack-block__item-description">
+                  Скилл 3
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="stack-block__item stack-block__item-react">
+            <div class="stack-block__item-person">
+              <img
+                src="img/TimHTML.png"
+                alt=""
+                class="stack-block__item-person-img"
+              />
+              <blockquote class="description">
+                «Создавая технологии, мы формируем общество. Делайте это
+                ответственно»
+              </blockquote>
+            </div>
+            <div class="stack-block__item-stack">
+              <h1 class="title stack-block__item-title">React</h1>
+              <ul class="stack-block__item-stack-list">
+                <li class="description stack-block__item-description">
+                  Скилл 1
+                </li>
+                <li class="description stack-block__item-description">
+                  Скилл 2
+                </li>
+                <li class="description stack-block__item-description">
+                  Скилл 3
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="stack-block__item stack-block__item-git">
+            <div class="stack-block__item-person">
+              <img
+                src="img/TimHTML.png"
+                alt=""
+                class="stack-block__item-person-img"
+              />
+              <blockquote class="description">
+                «Создавая технологии, мы формируем общество. Делайте это
+                ответственно»
+              </blockquote>
+            </div>
+            <div class="stack-block__item-stack">
+              <h1 class="title stack-block__item-title">Git</h1>
+              <ul class="stack-block__item-stack-list">
+                <li class="description stack-block__item-description">
+                  Скилл 1
+                </li>
+                <li class="description stack-block__item-description">
+                  Скилл 2
+                </li>
+                <li class="description stack-block__item-description">
+                  Скилл 3
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
