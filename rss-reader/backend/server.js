@@ -26,7 +26,13 @@ app.get("/api/rss", async (req, res) => {
   }
 });
 
+// const PORT = process.env.PORT || 3001;
+// app.listen(PORT, () => {
+//   console.log(`✅ Сервер запущен на порту ${PORT}`);
+// });
+
 const PORT = 3001;
+
 app.listen(PORT, () => {
   console.log(`✅ Бэкенд запущен на http://localhost:${PORT}`);
   console.log(`👉 Пример: http://localhost:3001/api/rss`);

@@ -8,7 +8,9 @@ export default function App() {
   useEffect(() => {
     async function fetchRSS() {
       try {
-        const response = await fetch("http://localhost:3001/api/rss");
+        const response = await fetch(
+          "https://rss-backend-tbjj.onrender.com/api/rss"
+        );
 
         if (!response.ok) throw new Error("Ошибка сети");
 
